@@ -12,7 +12,7 @@ const LikeSection = props => {
         className="like-section"
         key="likes-icons-container"
       >
-        <div className="like-section-wrapper">
+        <div onClick={event => className="like-section-wrapper">
           <FontAwesomeIcon icon={faHeart} />
         </div>
         <div className="like-section-wrapper">
@@ -26,24 +26,3 @@ const LikeSection = props => {
 
 export default LikeSection;
 
-/*
-const LikeSection = props => {
-  return (
-    <div>
-      <div
-        className="like-section"
-        key="likes-icons-container"
-      >
-        <div onClick={() => props.setLikes(props.likes + 1)} className="like-section-wrapper">
-          <FontAwesomeIcon icon={faHeart} />
-        </div>
-        <div className="like-section-wrapper">
-          <FontAwesomeIcon icon={faComment} />
-        </div>
-      </div>
-      <p className="like-number">{props.likes} likes</p>
-    </div>
-  )
-};
-
-export default LikeSection;*/
